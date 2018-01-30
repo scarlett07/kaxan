@@ -1,0 +1,21 @@
+/*escribir un post nuevo*/
+.post-user-newfeed {
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+/*iconos foto y add post*/
+.post-user-icon > ul > li {
+  display: inline-block;
+}
+
+/*iconos intereses perfil*/
+.profile-icon-preference > ul > li {
+  display: inline-block;
+}
+
+/*pic post*/
+.pic-post > a > img {
+  width: 100%;
+  height: 30vh;
+}
