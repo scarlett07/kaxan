@@ -1,3 +1,4 @@
+//Inicializando firebase
 var config = {
     apiKey: "AIzaSyDAXHqk1lEk-mEbyju9yshokJcMNbTfvY4",
     authDomain: "red-social-4da9d.firebaseapp.com",
