@@ -11,34 +11,36 @@
 </head>
 
 <body>
+  <article class="login-back">
   <section class="container">
-    <div class="row login">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s10 m10">
-            <i class="material-icons prefix">account_circle</i>
-            <input id="icon_prefix" type="text" class="validate">
-            <label for="icon_prefix">First Name</label>
-          </div>
-          <div class="input-field col s10 m10">
-        <i class="material-icons prefix">vpn_key</i>
-        <input id="pass" type="password" class="validate">
-        <label for="pass">Password</label>
+    <div class="row">
+      <div class="login">
+        <form class="col s12 m12 l6 center teal lighten-4">
+            <div class="input-field ">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">First Name</label>
+            </div>
+            <div class="input-field">
+          <i class="material-icons prefix">vpn_key</i>
+          <input id="pass" type="password" class="validate">
+          <label for="pass">Password</label>
+        </div>
+        <div class="input-field col s12 m12">
+           <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+          <label for="filled-in-box">Remember Me</label>
       </div>
-      <div class="input-field col s12 m12">
-         <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-        <label for="filled-in-box">Remember Me</label>
+      <!--botón para ingresar con Google-->
+      <div class="col s12 m12">
+        <a class="waves-effect waves-light btn" id="btn-google"><i class="material-icons left">cloud</i>Ingresa con Google</a>
+      </div>
+      <!--activa modal para registrarse-->
+      <div class="col s12 m12">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+      </div>
       </div>
   </div>
-  <!--botón para ingresar con Google-->
-  <div class="col s12 m12">
-    <a class="waves-effect waves-light btn" id="btn-google"><i class="material-icons left">cloud</i>Ingresa con Google</a>
-  </div>
-  <!--activa modal para registrarse-->
-  <div class="col s12 m12">
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-  </div>
-      </form>
+
     </div>
   </section>
     </article>
