@@ -67,7 +67,7 @@ $(document).ready(initApp());
  firebase.database().ref("user/" + user.uid).set(usuario)
   .on("child_added", function(s){
     var user = s.val();
-    $('#picUser')append("<img class="'circle'" src='"+ user.foto +"'/>");
+    $('#picUser')append("<img src='"+ user.foto +"'/>");
   })
 
  $('#post').click(post)
