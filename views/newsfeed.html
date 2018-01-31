@@ -11,32 +11,45 @@
   <body>
     <section class="row">
       <nav>
-      <div class="nav-wrapper col s12 m12">
-        <a href="#!" class="brand-logo left"><i class="material-icons">cloud</i>Logo</a>
-        <ul class="right">
-          <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-          <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-          <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-          <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class="nav-wrapper col s12 m12">
+          <a href="#!" class="brand-logo left"><i class="material-icons">cloud</i>Logo</a>
+          <ul class="right">
+            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+          </ul>
+        </div>
+      </nav>
     </section>
     <section class="container post-user-newfeed">
-     <div  class="row">
-      <div class="col s12 m12 left user-profile-newsfeed">
-        <!--foto de perfil-->
-        <div class="col s3 m3 left profile-pic">
-          <img class="circle" src="../assets/images/profile-example.jpg" height="50px" width="50px" alt="">
+      <div  class="row">
+        <div class="col s12 m12 left user-profile-newsfeed">
+          <!--foto de perfil-->
+          <div class="col s3 m3 left profile-pic">
+            <img class="circle" src="../assets/images/profile-example.jpg" height="50px" width="50px" alt="">
+          </div>
+          <!--escribir post-->
+          <div class="col s6 m6 right">
+            <div class="file-field input-field">
+              <div class="btn">
+                <!-- agregando el boton para subir archivos (imagenes) -->
+                <i class="material-icons dp48">image</i>
+                <input id="upload-file" type="file" accept="image/*">
+              </div>
+              <div class="file-path-wrapper">
+                <input id="upload-file" class="file-path validate" type="text">
+              </div>
+              <img id="image" style="width: 100px; height: 100px;">
+            </div>
+            <div class="input-field write-post">
+              <input placeholder="Publica una actualización de estado" id="add-post" type="text" class="validate">
+              <label for="add-post"></label>
+              <!-- agregando boton para postear -->
+              <button id="post" type="button" name="button">Postear</button>
+            </div>
+          </div>
         </div>
-        <!--escribir post-->
-        <div class="input-field col s6 m6 right write-post">
-         <input placeholder="Publica una actualización de estado" id="add-post" type="text" class="validate">
-          <label for="add-post"></label>
-          <!-- agregando boton para postear -->
-          <button id="post"type="button" name="button">Postear</button>
-        </div>
-      </div>
       </div>
       <div class="row">
         <div class="col s12 m12">
@@ -48,20 +61,18 @@
                 <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
               </ul>
             </div>
-
+          </div>
         </div>
-
-      </div>
-    </section>
-    <!--post de amigos se crean dinamicamente-->
-    <section class="row post-friend">
-      <!-- a partir de aqui todo debe ser dinamico -->
-      <div class="col s12 m12 profile-post">
-        <div class="col s1 m1 left profile-pic">
-          <img class="circle" src="../assets/images/profile-friend-example.jpg" height="30px" width="30px" alt="">
-        </div>
-        <div class="col s9 m19 right address">
-          <h6>Aquí va la dirección del lugar</h6>
+      </section>
+      <!--post de amigos se crean dinamicamente-->
+      <section id="conteinerPost" class="row post-friend">
+        <!-- a partir de aqui todo debe ser dinamico -->
+        <div class="col s12 m12 profile-post">
+          <div class="col s1 m1 left profile-pic">
+            <img class="circle" src="../assets/images/profile-friend-example.jpg" height="30px" width="30px" alt="">
+          </div>
+          <div class="col s9 m19 right address">
+            <h6>Aquí va la dirección del lugar</h6>
           </div>
         </div>
         <div class="row pic-post-friend">
@@ -70,11 +81,11 @@
           </div>
         </div>
       </div>
-      </section>
-
+    </section>
     <!--modal post amigos-->
     <!--Modal post-->
-    <div id="modal-post-friends" class="modal">
+    <div id="modals">
+      <div id="modal-post-friends" class="modal">
         <div class="modal-content">
           <section class="row post-friends">
             <div class="col s12 m12 profile-post">
@@ -89,18 +100,15 @@
               </div>
               <div class="row icon-cost">
                 <li><a href="sass.html"><i class="material-icons">attach_money</i></a></li>
-
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-
-
-
-
-
-
-
+    </div>
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
