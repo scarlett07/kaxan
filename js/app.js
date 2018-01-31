@@ -26,6 +26,8 @@ function authentication(provider) {
     // The signed-in user info.
     var user = result.user;
     console.log(result);
+    window.location.href='../views/newsfeed.html';
+
   }).catch(function(error) {
     console.log(error);
     // Handle Errors here.
@@ -39,6 +41,7 @@ function authentication(provider) {
     // The firebase.auth.AuthCredential type that was used.
     var credential = error.credential;
     console.log(credential);
+
   });
 
 }
