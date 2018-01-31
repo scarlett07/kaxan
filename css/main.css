@@ -33,7 +33,7 @@ h6 {
 }
 
 /*vista splash*/
-.splash-view {
+.splash-view-mobile {
   width: 50%;
   height: 50%;
   margin-top: 58%;
@@ -43,6 +43,12 @@ h6 {
   border-radius: 15px;
 }
 
+.logo-splash-desktop {
+  width: 50%;
+  height: 10vh;
+  margin-top: 15%;
+  margin-left: 30%;
+}
 
 /*view login desktop*/
 .login > form {
