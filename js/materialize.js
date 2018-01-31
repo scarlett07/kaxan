@@ -1,13 +1,4 @@
-//splash view
-var myVar;
 
-function myFunction() {
-    myVar = setTimeout(function(){ alert("Hello") }, 3000);
-}
-
-function myStopFunction() {
-    clearTimeout(myVar);
-}
 
 //modal registrarse
 $(document).ready(function(){
