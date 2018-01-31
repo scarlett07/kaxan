@@ -9,7 +9,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
-
+// Autenticacion con Google
 $('#btn-google').click(function() {
   authGoogle();
 })
@@ -42,3 +42,19 @@ function authentication(provider) {
   });
 
 }
+
+//Crear el div dinamicamente
+$(document).ready(initApp());
+
+ function initApp(){
+
+ }
+
+ $('#post').click(post)
+
+ function post(){
+   var divPorfile =$('<div class="col s12 m12 profile-post"></div>');
+   var divPorfile =$('<div class="col s12 m12 profile-post"></div>');
+
+
+ }
