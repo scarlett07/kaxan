@@ -38,7 +38,7 @@ function authentication(provider) {
     console.log(result);
     window.location.href='../views/newsfeed.html';
     saveUser(user);
-    }
+  })
 
   }).catch(function(error) {
     console.log(error);
