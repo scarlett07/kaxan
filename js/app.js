@@ -18,6 +18,16 @@ function authGoogle() {
   var provider = new firebase.auth.GoogleAuthProvider();
   authentication(provider);
 }
+//creando la base de datos con loa datos del usuario
+function saveUser(usuario){
+  var usuario = {
+    uid:user.uid,
+    nombre:user.deisplayName,
+    email:user.emal,
+    foto:user.photoURL
+  }
+  firebase.database().ref("user/" + user.uid).set(usuario);
+  }
 
 function authentication(provider) {
   firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -27,6 +37,8 @@ function authentication(provider) {
     var user = result.user;
     console.log(result);
     window.location.href='../views/newsfeed.html';
+    saveUser(user);
+    }
 
   }).catch(function(error) {
     console.log(error);
@@ -48,10 +60,16 @@ function authentication(provider) {
 
 //Crear el div dinamicamente
 $(document).ready(initApp());
-
  function initApp(){
-
  }
+
+ //leer la base de datos
+
+ firebase.database().ref("user/" + user.uid).set(usuario)
+  .on("child_added", function(s){
+    var user = s.val();
+    $('#picUser')append("<img class="'circle'" src='"+ user.foto +"'/>");
+  })
 
  $('#post').click(post)
  $('#upload-file').change(function (event){
