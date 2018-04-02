@@ -6,63 +6,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Kaxan</title>
+    <title>Profile</title>
   </head>
-  <body>
-    <nav>
-    <div class="nav-wrapper col s12 m12">
-      <a href="#!" class="brand-logo left"><i class="material-icons">cloud</i>Logo</a>
-      <ul class="right">
-        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-      </ul>
-    </div>
-  </nav>
-  <!--perfil usuario-->
-  <section class="row profile">
-    <!--foto de prfil-->
-    <div class="col s3 m3 left profile-pic">
-      <img class="circle" src="../assets/images/profile-example.jpg" height="100px" width="100px" alt="">
-    </div>
-    <!--info de perfil-->
-    <div class="col s7 m7 right profile-info">
-      <h5>User</h5>
-      <h6>dato</h6>
-      <h6>dato</h6>
-    </div>
-    <!--iconos de perfil-->
-    <div class="row">
-      <div class="col s12 m12 right profile-icon-preference">
-        <ul class="right">
-          <li><a href="sass.html"><i class="material-icons">cloud_circle</i></a></li>
-          <li><a href="sass.html"><i class="material-icons">cloud_circle</i></a></li>
-          <li><a href="sass.html"><i class="material-icons">cloud_circle</i></a></li>
-          <li><a href="sass.html"><i class="material-icons">cloud_circle</i></a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!--post se crean dinamicamente-->
-  <section class="row post">
-    <div class="col s12 m12 profile-post">
-      <div class="col s12 m12 left address">
-        <h6>Aquí va la dirección del lugar</h6>
-      </div>
-      <div class="row pic-post">
-        <div class="col s12 m12">
-          <a class="modal-trigger" href="#modal-post"><img class="responsive-img"src="../assets/images/image-post-example.jpg" alt=""></a>
-        </div>
+  <body class="#ffecb3 amber lighten-4">
+    <section class="row">
+      <nav class="teal lighten-1  col l12 s12 m12">
+     <div class="nav-wrapper">
+         <a href="newsfeed.html" class="brand-logo hide-on-small-only"> <img class="logo-icon" src="../assets/images/logo-kaxan-bco.png" alt=""></a>
+        <ul class=" right col l6 s12 m12">
+         <li><a href="friends.html"><i class="material-icons">group</i></a></li>
+         <li><a href="messages.html"><i class="material-icons">email</i></a></li>
+         <li><a href="places.html"><i class="material-icons">pin_drop</i></a></li>
+         <li><a href="settings.html"><i class="material-icons">settings</i></a></li>
+         <li><a href="mobile.html"><i class="material-icons">menu</i></a></li>
+       </ul>
+     </div>
+   </nav>
+ </section>
 
-      </div>
-    </section>
+    <article class="">
+     <!--perfil usuario desktop-->
+   <section class="row profile">
+     <!--foto de perfil desktop-->
+     <div class="col l3  profile-pic hide-on-small-only ">
+       <img class="circle" src="../assets/images/profile-example.jpg" height="250px" width="250px" alt="">
+     </div>
+<!--foto de perfil mobile-->
+     <div class="col l3  profile-pic-mobile hide-on-large-only">
+       <img class="circle " src="../assets/images/profile-example.jpg" height="250px" width="250px" alt="">
+     </div>
+     <!--info de perfil-->
+     <div class="hide-on-small-only">
+       <div class="col l4  profile-info ">
+         <h3>Gato López</h3>
+         <h5>CDMX</h5>
+         <h6>Me encanta viajar!</h6>
+            <!--iconos de perfil-->
+            <div class="profile-icon-preference">
+              <ul class="">
+                <li><i class="medium material-icons">local_pizza</i></a></li>
+                <li><i class="medium material-icons">local_play</i></a></li>
+                <li><i class="medium material-icons">local_dining</i></a></li>
+                <li><i class="medium material-icons">local_bar</i></a></li>
+              </ul>
+              <a class="waves-effect waves-light btn" id="seguir"><img class="sigueme" src="" alt=""> Sígueme!</a>
+            </div>
+            </div>
+            <!--mobile profile-->
+            <div class="show-on-small hide-on-large-only">
+              <div class="col l4  profile-info ">
+                <h3>Gato López</h3>
+                <h5>CDMX</h5>
+                <h6>Me encanta viajar!</h6>
+                   <!--iconos de perfil-->
+                   <div class="profile-icon-preference">
+                     <ul class="">
+                       <li><i class="medium material-icons">local_pizza</i></a></li>
+                       <li><i class="medium material-icons">local_play</i></a></li>
+                       <li><i class="medium material-icons">local_dining</i></a></li>
+                       <li><i class="medium material-icons">local_bar</i></a></li>
+                     </ul>
+                     <a class="waves-effect waves-light btn" id="seguir"><img class="sigueme" src="" alt=""> Sígueme!</a>
+                   </div>
+                   </div>
+     </div>
 
-      </div>
-    </div>
-
-  </section>
-
+   </section>
+   <!--post se crean dinamicamente-->
+   <article class="container">
+   <section class="row post amber lighten-5">
+     <div class="col l12 profile-post">
+       <div class="col l12 left address">
+         <h5>Palenque, Chiapas, México</h5>
+       </div>
+       <div class="row pic-post center">
+         <div class="col l12">
+           <a class="modal-trigger" href="#modal-post"><img class="responsive-img"src="../assets/images/image-post-example.jpg" alt=""></a>
+         </div>
+       </div>
+     </section>
+       </div>
+   </section>
+ </article>
+ </article>
 
 
   <!--Modal post-->
@@ -71,13 +97,13 @@
         <section class="row post">
           <div class="col s12 m12 profile-post">
             <div class="col s12 m12 left address">
-              <h6>Aquí va la dirección del lugar</h6>
+              <h6>Km. 6.5 carretera Ramal Palenque-Zona Arqueológica de Palenque, Municipio de Palenque, Chiapas,</h6>
             </div>
             <div class="row pic-post">
               <img class="responsive-img" src="../assets/images/image-post-example.jpg" alt="">
             </div>
             <div class="row coment-post">
-              <h6>aqui av aescribir loq ue quiera aksnashsajhnkjasdhnsdahfahfodhadfsdhdshfkjaKJADSJKABCKJCBSCKJASCUSAOICSIUASIUASISAKJACSAJKHDOUSDHSIU</h6>
+              <h6>Palenque es una ciudad del sur de México, en el estado de Chiapas. Es conocida por ser una vía de acceso a las antiguas ruinas mayas del mismo nombre en el oeste. El sitio arqueológico, que fue un centro ceremonial, junto con la selva circundante conforman el Parque Nacional Palenque. </h6>
             </div>
             <div class="row icon-cost">
               <li><a href="sass.html"><i class="material-icons">attach_money</i></a></li>
@@ -86,13 +112,6 @@
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
       </div>
     </div>
-
-
-
-
-
-
-
 
 
 
